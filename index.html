@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Lyrics!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎤 Guess the Lyrics 🎤</h1>
+
+      <div id="quiz-box">
+        <p id="lyric"></p>
+
+        <div id="player-container">
+          <div id="player"></div>
+        </div>
+
+        <button id="toggle-video-btn">🎧 Audio Only</button>
+
+        <input type="text" id="answer" placeholder="Type the missing word" />
+        <button id="check-btn">Check</button>
+        <p id="feedback"></p>
+        <button id="next-btn" class="hidden">Next</button>
+      </div>
+    </div>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/cW8VLC9nnTo?si=5gp5Ht_yQdlzHt16"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
